@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas Sherpa</title> 
+</head>
+<body>
+    <header>
+        <h1>Hamburguesas Sherpa, desde 2022</h1>
+    </header>
+
+    <section>
+        <img src="../PracticaHtml/image/hamburguseasherpa.png" alt="Logo Hamburguesas Sherpa"/>
+
+        <h2>Menú</h2>
+        <h3>Hamburguesas</h3>
+        <p>Todos incluyen Cheddar, Lechuga, Salsa de Tomate, Mayonesa y cebollas</p>
+        <ul>
+            <li>Clasica .................... $05</li>
+            <li>Barbacoa ................. $10</li> 
+            <li>Especial .................. $25</li>
+            <li>Bacon Clasico  ......... $15</li>
+            <li>Maria y Jose ........... $20</li>
+        </ul>
+
+        <h3>Acompañamientos</h3>
+        <p>cada una a su gusto</p>
+        <dl>
+            <dt><b>Papas Rusticas Miel</b> .................. $4</dt>
+            <dd>- papa frita pequeña</dd>
+            <dt><b>Papas Rusticas XL</b> .................... $6</dt>
+            <dd>- Papa fritas grandes</dd>
+            <dt><b>El Señor de los Anillos</b> .............. $8</dt>
+            <dd>- Aros de Cebolla Grande</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Ubicación</h2>
+        <h3>Sucursales</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Horarios</th>
+            </tr>
+            <tr>
+                <td>Centro</td>
+                <td><a href="https://goo.gl/maps/UcswFvqNDm71SArs9" target="_blank">Manuel J othon 118, Obrera, Cuauhtémoc, 06800 Ciudad de México, CDMX, </a></td>
+                <td> L - D 12m - 10pm</td>
+            </tr>
+            <tr>
+                <td>Sur</td>
+                <td><a href="https://goo.gl/maps/h47SkcAC9z37YaaX8" target="_blank">Calle José Antonio Torres 553, Vista Alegre, Cuauhtémoc, 06860 Ciudad de Mexico</a></td>
+                <td> L - D 4pm - 2am</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td><a href="https://g.page/hamburguesas-las-mamis-cdmx?share" target="_blank">Casa del Obrero Mundial 898, Álamos, Benito Juárez, 03400 Ciudad de México, CDMX, México
+                </a></td>
+                <td> L - D 6pm - 4am</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Pedidos</h2>
+        <h3>Haz tu pedido aquí</h3>
+
+        <form action="">
+            <p>¿De que Local lo quieres?</p>
+            <select>
+                <option value="Norte">Norte</option>
+                <option value="Centro">Centro</option>
+                <option value="Sur">Sur</option>
+            </select>
+
+            <p>¿De que Hambuguesas quieres?</p>
+            <input type="checkbox" id="Clasica" name="Clasica" value="Clasica">
+            <label for="Clasica">Clasica</label>
+            <input type="number" id="ClasicaNumber" name="ClasicaNumber" placeholder="¿Cuántas?">
+            <br>
+            <input type="checkbox" id="Barbacoa" name="Barbacoa" value="Barbacoa">
+            <label for="Barbacoa">Barbacoa</label>
+            <input type="number" id="BarbacoaNumber" name="BarbacoaNumber" placeholder="¿Cuántas?">
+            <br>
+            <input type="checkbox" id="Especial" name="Especial" value="Especial">
+            <label for="Especial">Especial</label>
+            <input type="number" id="EspecialNumber" name="EspecialNumber" placeholder="¿Cuántas?">
+            <br>
+            <input type="checkbox" id="BaconClasico" name="BaconClasico" value="BaconClasico">
+            <label for="BaconClasico">BaconClasico</label>
+            <input type="number" id="BaconClasicoNumber" name="BaconClasicoNumber" placeholder="¿Cuántas?">
+            <br>
+            <input type="checkbox" id="MariayJose" name="MariayJose" value="MariayJose">
+            <label for="MariayJose">MariayJose</label>
+            <input type="number" id="MariayJoseNumber" name="MariayJoseNumber" placeholder="¿Cuántas?"><br>
+            
+            <br><br>
+            
+            <label for="Nombre">Nombre:</label><br>
+            <input type="text" id="Nombre" name="Nombre" placeholder="¿Cómo te llamas?">
+
+            <br><br>
+
+            <label for="Teléfono">Teléfono:</label><br>
+            <input type="text" id="Teléfono" name="Teléfono" placeholder="¿Tu teléfono?">
+
+            <br><br>
+            <label for="Dirección">Dirección:</label><br>
+            <input type="text" id="Dirección" name="Dirección" placeholder="¿A dónde lo mandamos?">
+
+            <button type="submit">Enviar pedido</button>
+            <br><br>
+        </form>
+    </section>
+    
+
+</body>
+</html>
